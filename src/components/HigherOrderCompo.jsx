@@ -10,7 +10,7 @@ function HigherOrderCompo(PriceCompo) {
         function decrease() {
             setCount(count - 1)
         }
-        // c
+        <p>hello</p>
 
 
         return (<PriceCompo count={count} increase={increase} decrease={decrease} />)

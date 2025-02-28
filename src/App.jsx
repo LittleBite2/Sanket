@@ -11,8 +11,11 @@
 // import UseCallbackHook from "./components/UseCallbackHook"
 // import CustomHook from "./components/CustomHook"
 // import PropsChildren from "./components/PropsChildren"
+// import HigherOrderCompo from "./components/HigherOrderCompoParent"
 
-import HigherOrderCompo from "./components/HigherOrderCompoParent"
+import UseContextHook from "./components/UseContextHook"
+import UserContextProvider from "./context/UserContextProvider"
+
 
 
 
@@ -20,7 +23,8 @@ import HigherOrderCompo from "./components/HigherOrderCompoParent"
 function App() {
 
   return (
-    <>
+    <UserContextProvider>
+
 
       {/* <Task /> */}
       {/* <StateHook /> */}
@@ -35,9 +39,10 @@ function App() {
       {/* <UseCallbackHook /> */}
       {/* <CustomHook /> */}
       {/* <PropsChildren /> */}
-      <HigherOrderCompo />
+      {/* <HigherOrderCompo /> */}
+      <UseContextHook />
+    </UserContextProvider>
 
-    </>
   )
 }
 
